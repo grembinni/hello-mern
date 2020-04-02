@@ -34,7 +34,7 @@ router.put('/:id', (req, res) => {
         .catch(err => res.status(400).json('error:'+err));
 });
 
-router.post('/add', (req, res) => {
+router.post('/', (req, res) => {
     const username = req.body.username;
     const description = req.body.description
     const duration = req.body.duration
